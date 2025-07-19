@@ -1,0 +1,43 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local Configuration
+local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Native
+.externalNativeBuild/
+.cxx/
+
+captures/
+
+# Keystore
+*.jks
+
+# Firebase
+google-services.json
+
+# Crashlytics / Fabric
+fabric.properties
+
+# OS Generated
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+
+# Windows
+*.bak
+*.swp
+
+# Jetpack Compose previews
+*.apk
+*.ap_
+
