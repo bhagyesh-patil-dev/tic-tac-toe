@@ -41,6 +41,18 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+    override fun onPause() {
+        super.onPause()
+        handler.removeCallbacks(startActivityRunnable)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (!hasLaunched) {
+            handler.postDelayed(startActivityRunnable, 1000)
+        }
+    }
+
     override fun onDestroy() {
         super.onDestroy()
         handler.removeCallbacks(startActivityRunnable)
